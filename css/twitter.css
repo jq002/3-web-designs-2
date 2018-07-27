@@ -31,12 +31,70 @@ textarea {
   margin: 0;
   padding: 0;
 }
+html {
+  background-color: #f5cea6;
+}
 body {
   font-family: 'Open Sans', sans-serif;
   margin: 0 auto;
-  background: #f4f3f1;
+  background: #f2eee8;
+  max-width: 1400px;
+  min-width: 1000px;
 }
 .post {
   position: relative;
   text-align: left;
+  padding: 30px;
+  background-color: #fffbf5;
+  border-bottom: 1px solid #f2eee8;
+}
+.post .avator {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  border-radius: 100%;
+}
+.post .content {
+  margin-left: 60px;
+}
+.post .content span {
+  margin-right: 7px;
+}
+.post .content span.name {
+  font-weight: bold;
+}
+.post .content span.account {
+  font-weight: lighter;
+  color: #d6d2c4;
+}
+.post .content span.time {
+  color: #d6d2c4;
+  float: right;
+  margin-right: 0;
+}
+.post header {
+  margin-bottom: 10px;
+}
+.post section p {
+  line-height: 1.4;
+  font-weight: normal;
+  margin-bottom: 10px;
+}
+.post section img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.post footer a {
+  text-decoration: none;
+  color: #d6d2c4;
+  margin-right: 10px;
+}
+.post footer a:last-child {
+  float: right;
+  margin-right: 0;
+}
+.post footer a:hover {
+  color: #6e6c66;
 }

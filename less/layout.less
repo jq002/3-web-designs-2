@@ -1,17 +1,82 @@
 
 @bg-color:#f4f3f1;
-@first-text-color:#373d4b;
-@secondy-text-color:#60677a;
-@third-text-color:#9499a6;
+@first-text-color:#494a53;
+@secondy-text-color:#6e6c66;
+@third-text-color:#d6d2c4;
 @highlight-text-color:#fff;
-@button-color:#67ddab;
 @border-color:#d9dada;
+
+@post-bg-color:#fffbf5;
+@body-bg-color:#f2eee8;
+html{
+    background-color: #f5cea6;
+}
 body {
     font-family: 'Open Sans', sans-serif;
     margin: 0 auto;
-    background: @bg-color;
+    background: @body-bg-color;
+    max-width: 1400px;
+    min-width: 1000px;
 }
 .post{
     position: relative;
     text-align: left;
+    padding: 30px;
+    background-color: @post-bg-color;
+    border-bottom: 1px solid @body-bg-color;
+    .avator{
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        border-radius: 100%;
+    }
+    .content{
+        margin-left: 60px;
+        span{
+            margin-right: 7px;
+            &.name{
+                font-weight: bold;
+            }
+            &.account{
+                font-weight: lighter;
+                color: @third-text-color;
+            }
+            &.time{
+                color: @third-text-color;
+                float: right;
+                margin-right: 0;
+            }
+        }
+    }
+    header{
+        margin-bottom: 10px;
+    }
+    section{
+        p{
+            line-height: 1.4;
+            font-weight: normal;
+            margin-bottom: 10px;
+        }
+        img{
+            width: 100%;
+            margin-bottom: 10px;
+        }
+    }
+    footer{
+        a{
+            text-decoration: none;
+            color: @third-text-color;
+            margin-right: 10px;
+            &:last-child{
+                float: right;
+                margin-right: 0;
+            }
+            &:hover{
+                color: @secondy-text-color;
+            }
+        }
+    }
+
 }
