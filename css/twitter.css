@@ -41,31 +41,101 @@ body {
   font-family: 'Open Sans', sans-serif;
   margin: 0 auto;
   background: #f2eee8;
-  max-width: 1000px;
+  max-width: 1400px;
   min-width: 1000px;
 }
-.header ul li {
-  display: inline-block;
+.header {
+  background-color: #fffbf5;
+  border-bottom: 1px solid #f2eee8;
+}
+.header ul {
+  display: flex;
+  align-items: center;
+}
+.header ul li.logo {
+  flex: 1;
+  text-align: center;
 }
 .header ul li img {
   border-radius: 100%;
   height: 40px;
   width: 40px;
+  object-fit: cover;
+}
+.main {
+  display: flex;
 }
 aside.left {
-  float: left;
+  order: -1;
   width: 22%;
-  height: 200px;
   background-color: #80a8cc;
+  color: #ffffff;
+}
+aside.left .profile {
+  padding: 50px 20px 40px;
+  text-align: center;
+}
+aside.left .profile img {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  object-fit: cover;
+}
+aside.left .profile h3 {
+  font-size: 16px;
+  font-weight: lighter;
+  margin: 5px 0;
+}
+aside.left .profile p {
+  color: #f1f6fa;
+  font-size: 14px;
+}
+aside.left .profile a {
+  display: block;
+  color: #f1f6fa;
+  margin: 15px 0;
 }
 aside.right {
-  float: right;
   width: 22%;
-  height: 200px;
-  background-color: #80a8cc;
+  background-color: #fffbf5;
 }
-section.content {
-  overflow: hidden;
+aside.right .trends {
+  padding: 35px;
+}
+aside.right .trends h3 {
+  font-weight: lighter;
+  color: #989690;
+  margin-bottom: 20px;
+}
+aside.right .trends a {
+  color: #80a8cc;
+  text-decoration: none;
+}
+section.center {
+  flex: 1;
+  padding: 40px;
+}
+section.center .info ul {
+  display: flex;
+  background-color: #fffbf5;
+  margin-bottom: 40px;
+  text-align: center;
+}
+section.center .info ul li {
+  flex: 1;
+  padding: 12px 0;
+}
+section.center .info ul li h3 {
+  color: #d6d2c4;
+  font-weight: lighter;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+section.center .info ul li p {
+  font-size: 14px;
+}
+section.center .info ul li:first-child {
+  border-bottom: 5px solid #80a8cc;
 }
 .post {
   position: relative;
@@ -81,6 +151,7 @@ section.content {
   top: 30px;
   left: 30px;
   border-radius: 100%;
+  object-fit: cover;
 }
 .post .content {
   margin-left: 60px;
@@ -122,5 +193,5 @@ section.content {
   margin-right: 0;
 }
 .post footer a:hover {
-  color: #6e6c66;
+  color: #989690;
 }
